@@ -3,7 +3,7 @@
 
 let navIcon = document.querySelector(".hamburger");
 let nav = document.querySelector(".nav");
-let header = document.querySelector(".header");
+let openingHours = document.querySelector(".open");
 let body = document.querySelector("body");
 
 navIcon.addEventListener("click", () => {
@@ -12,11 +12,11 @@ navIcon.addEventListener("click", () => {
 
     if (navIcon.classList.contains("is-active")) {
         nav.classList.add("nav--show-mobile");
-        header.style.backgroundColor = "#007ACC";
+        openingHours.style.display = "none";
         body.style.overflow = "hidden";
     } else {
         nav.classList.remove("nav--show-mobile");
-        header.style.backgroundColor = "transparent";
+        openingHours.style.display = "flex";
         body.style.overflow = "unset";
     }
     
