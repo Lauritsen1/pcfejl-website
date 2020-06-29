@@ -15,7 +15,7 @@ db.collection("openingHours")
             let data = doc.data();
 
             let openingHours = document.querySelector('.open__message');
-            let indicator = document.querySelector('.open__indicator');
+            let indicator = document.querySelector('.open__status');
 
             if (data.open == true) {
                 openingHours.textContent = 'Åbent nu, vi lukker kl 22:00';
