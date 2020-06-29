@@ -1,0 +1,137 @@
+//==========
+// Mobile
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    padding: 0 5%;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: background-color 0.5s;
+
+    &__logo {
+        height: 3em;
+    }
+}
+
+.header--active {
+    background-color: $primary-color;
+}
+
+.nav {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $primary-color;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+    }
+
+    &__link:hover {
+        opacity: 0.6;
+    }
+}
+
+.nav--show-mobile {
+    transform: translateX(0);
+}
+
+.nav--active-link {
+    opacity: 0.6;
+}
+
+.download {
+    display: none;
+}
+
+.hamburger {
+    padding: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: white;
+}
+
+//==========
+// Desktop
+
+@media (min-width: 1100px) {
+    .header {
+
+        &__link {
+            text-decoration: none;
+        }
+    }
+
+    .nav {
+        position: unset;
+        background-color: transparent;
+        transform: translateX(0);
+        height: max-content;
+        width: max-content;
+        transition: none;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                margin-left: 2em;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+        }
+    }
+
+    .download {
+        display: block;
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        font-size: 1.1em;
+        height: 2.5em;
+        width: 10em;
+        padding: 0.2em 0.5em;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        transition: transform 1s;
+    }
+
+    .download--color {
+        background-color: white;
+        color: $primary-color;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}

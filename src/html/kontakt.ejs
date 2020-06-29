@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1 class="hero__heading">Kontakt</h1>
+    </div>
+
+    <main>
+
+        <!-- Breadcrumbs -->
+        <%- include('templates/breadcrumbs'); %>
+
+        <div class="contact-form-container">
+
+            <form class="contact-form" netlify>
+
+                <h2 class="contact-form__heading">Send os en besked</h2>
+
+                <div id="error"></div>
+
+                <fieldset class="contact-form__fieldset">
+                    <input class="contact-form__input" name="name" id="name" type="text" placeholder="Navn">
+                    <input class="contact-form__input" name="email" id="email" type="email" placeholder="Email">
+                    <input class="contact-form__input" name="subject" id="subject" type="text" placeholder="Emne">
+                </fieldset>
+
+                <fieldset class="contact-form__fieldset">
+                    <textarea class="contact-form__message" name="message" id="message"
+                        placeholder="Hvad kan vi hjælpe med?"></textarea>
+                </fieldset>
+
+                <fieldset class="contact-form__button-container">
+                    <button class="contact-form__button">Send</button>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="employee-container">
+
+                <div class="employee">
+
+                    <div class="employee__image-container">
+                        <img class="employee__image" src="/assets/images/kontakt/placeholder.png" alt="">
+                    </div>
+
+                    <div class="employee__details">
+                        <h3 class="employee__name">Mads Larsen</h3>
+                        <div>
+                            <span class="employee__jobtitle">IT-supporter</span>
+                            <span class="employee__email">mkl@pcfejl.dk</span>
+                        </div>
+                        <span class="employee__phone"></span>
+                    </div>
+
+                </div>
+
+                <div class="employee">
+
+                    <div class="employee__image-container">
+                        <img class="employee__image" src="/assets/images/kontakt/placeholder.png" alt="">
+                    </div>
+
+                    <div class="employee__details">
+                        <h3 class="employee__name">Casper Bardram</h3>
+                        <div>
+                            <span class="employee__jobtitle">IT-supporter</span>
+                            <span class="employee__email">ceb@pcfejl.dk</span>
+                        </div>
+                        <span class="employee__phone"></span>
+                    </div>
+
+                </div>
+
+                <div class="employee">
+
+                    <div class="employee__image-container">
+                        <img class="employee__image" src="/assets/images/kontakt/placeholder.png" alt="">
+                    </div>
+
+                    <div class="employee__details">
+                        <h3 class="employee__name">Rasmus Lauritsen</h3>
+                        <div>
+                            <span class="employee__jobtitle">Webudvikler</span>
+                            <span class="employee__email">rll@pcfejl.dk</span>
+                        </div>
+                        <span class="employee__phone"></span>
+                    </div>
+
+                </div>
+
+                <div class="employee">
+
+                    <div class="employee__image-container">
+                        <img class="employee__image" src="/assets/images/kontakt/placeholder.png" alt="">
+                    </div>
+
+                    <div class="employee__details">
+                        <h3 class="employee__name">Frederik Pedersen</h3>
+                        <div>
+                            <span class="employee__jobtitle">Marketing & Bogholder</span>
+                            <span class="employee__email">fsp@pcfejl.dk</span>
+                        </div>
+                        <span class="employee__phone"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAzJ_PMIdpeeo8jiTgrhR4Z7DWc-B13iT4",
+            authDomain: "pcfejl-92407.firebaseapp.com",
+            databaseURL: "https://pcfejl-92407.firebaseio.com",
+            projectId: "pcfejl-92407",
+            storageBucket: "pcfejl-92407.appspot.com",
+            messagingSenderId: "17374909485",
+            appId: "1:17374909485:web:79019562ed4fad7f5ad4a4",
+            measurementId: "G-Z9P51JW7JV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        var db = firebase.firestore();
+    </script>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/breadcrumbs.js"></script>
+    <script src="/assets/js/kontakt.js"></script>
+
+</body>
+
+</html>

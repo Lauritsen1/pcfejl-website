@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl - Cookiepolitik</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero">
+
+    </div>
+
+    <!-- Breadcrumbs -->
+    <%- include('templates/breadcrumbs'); %>
+
+    <main>
+        <div class="politik">
+
+            <h1 class="politik__title">Privatlivspolitik</h1>
+
+            <p>PCfejl behandler personoplysninger om dig, når du besøger vores hjemmeside eller bruger andre af vores
+                services. Vi har derfor udarbejdet denne privatlivspolitik, som beskriver hvordan vi behandler dine
+                personoplysninger.</p>
+
+            <h3 class="politik__heading">Indsamling</h3>
+            <p>Du vil altid blive informeret, inden vi indsamler personlige oplysninger om dig. De personlige
+                oplysninger, vi indsamler, kan for eksempel være dit navn, din e-mailadresse og din privatadresse.</p>
+
+            <h3 class="politik__heading">Behandling</h3>
+            <p>Vi anvender oplysningerne til at optimere vores services</p>
+
+            <p>Vi videregiver ikke dine oplysninger til andre, medmindre du specifikt har samtykket til det.</p>
+
+            <h3 class="politik__heading">Dine rettigheder</h3>
+            <p>Som registreret har du ret til at få oplyst, hvilke personoplysninger, vi behandler om dig. Du kan
+                desuden til enhver tid gøre indsigelse mod, at oplysninger anvendes. Du kan også tilbagekalde dit
+                samtykke til, at der bliver behandlet oplysninger om dig. Hvis de oplysninger, der behandles om dig, er
+                forkerte, har du ret til at få dem rettet eller slettet.</p>
+
+            <p>Ønsker du at gøre brug af dine rettigheder, er du velkommen til at kontakte os på
+                privatlivspolitik@pcfejl.dk</p>
+
+            <p>Hvis du vil klage over vores behandling af dine personoplysninger, har du også mulighed for at tage
+                kontakt til Datatilsynet.</p>
+
+            <h3 class="politik__heading">Sikkerhed</h3>
+
+            <p>Vi behandler dine personoplysninger i overensstemmelse med gældende persondataregler. Vi har desuden har
+                truffet passende tekniske og organisatoriske foranstaltninger med henblik på at beskytte dine
+                oplysninger mod fx tab, manipulering eller uvedkommende adgang. Vi tilpasser løbende vores
+                sikkerhedsforanstaltninger i overensstemmelse med den teknologiske udvikling.</p>
+
+            <h3 class="politik__heading">Dataansvarlig og kontaktoplysninger</h3>
+
+            <ul class="politik__kontakt">
+                <li>PCfejl</li>
+                <li>privatlivspolitik@pcfejl.dk</li>
+            </ul>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

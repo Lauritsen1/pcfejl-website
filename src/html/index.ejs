@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Virus, fejl, computer, pc">
+
+    <meta name="description"
+        content="På pcfejl.dk hjælper vi dig med dine IT problemer, stort som småt, hvad enten om dit mailprogram ikke virker, har du virus, eller er din computer blevet langsom.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl - Når IT skal være nemt</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero hero--index">
+        <h1>Velkommen til pcfejl.dk</h1>
+        <p>Vi er den nemme løsning til dine IT problemer. Ring til os på +45 89 87 07 46.</p>
+        <p>Vi glæder os til at høre fra dig.</p>
+    </div>
+
+    <main>
+
+        <div class="tilbud">Åbningstilbud 50% til d. 12-7-2020</div>
+
+        <div class="wrapper">
+
+            <div class="index-section-1">
+
+                <div class="info-flex-container">
+
+                    <div class="info">
+                        <a href="/kontakt/">
+                            <div class="info-container">
+                                <div class="info__top">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <div class="info__middle">
+                                    <h3 class="info__heading">Hvem er vi</h3>
+                                    <p>Et team der bestræber sig på at give den bedste oplevelse.</p>
+                                </div>
+                                <div class="info__bottom">
+                                    <i class="info__arrow fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="info">
+                        <a href="/priser/">
+                            <div class="info-container">
+                                <div class="info__top">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="info__middle">
+                                    <h3 class="info__heading">Vi tilbyder</h3>
+                                    <p>IT support til en god pris, og som er til at forstå.</p>
+                                </div>
+                                <div class="info__bottom">
+                                    <i class="info__arrow fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="info">
+                        <a href="/priser/">
+                            <div class="info-container">
+                                <div class="info__top">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="info__middle">
+                                    <h3 class="info__heading">Priser</h3>
+                                    <p>Vi tilbyder en lav pris, med høj kvalitet af vores service.</p>
+                                </div>
+                                <div class="info__bottom">
+                                    <i class="info__arrow fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="index-section-2">
+
+                <div class="vision">
+
+                    <div class="vision__image-container">
+                        <img class="vision__image" src="/assets/images/index/mission.jpg">
+                    </div>
+
+                    <div class="vision__text">
+                        <h2>Mission og værdier</h2>
+                        <p>IT hjælp skal være tilgængelig for alle mennesker i alle aldre. IT skal være let at
+                            forstå, og man skal ikke grave dybt i lommerne for at få sit digitale liv til at fungere. Vi
+                            levere en service som er til at forholde sig til, og vi vil aldrig gå på kompromis
+                            med kvaliteten af vores ydelse. Det er PCfejl’s kerneværdier, og dem vil vi aldrig lave om
+                            på!
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

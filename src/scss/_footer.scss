@@ -1,0 +1,151 @@
+//==========
+// Mobile
+
+.footer {
+    background-color: #1d1d1f;
+    color: white;
+    padding: 3em 5%;
+
+    div {
+        margin-bottom: 3em;
+    }
+
+    div:last-of-type {
+        margin: 0;
+    }
+
+    &__logo {
+        
+
+        img {
+            height: 3em;
+        }
+    }
+
+    &__heading {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    &__link {
+        color: white;
+    }
+}
+
+.contact-info {
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        li:nth-child(2) {
+            margin-bottom: 1.5em;
+        }
+
+        li:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        color: $primary-color;
+        margin-right: 0.5em;
+    }
+}
+
+.hours {
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        li:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        color: $primary-color;
+        margin-right: 0.5em;
+    }
+}
+
+.links {
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        li:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        color: $primary-color;
+        margin-right: 0.5em;
+    }
+}
+
+.social {
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 3em;
+            margin-right: 0.5em;
+
+            a {
+                color: white;
+            }
+        }
+
+        li:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        color: $primary-color;
+        margin-right: 0.5em;
+    }
+}
+
+//==========
+// Desktop
+
+@media (min-width: 800px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            margin: 0;
+        }
+
+        &__logo {
+            text-align: center;
+        }
+
+    }
+}

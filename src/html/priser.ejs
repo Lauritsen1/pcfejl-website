@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl - Priser</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1 class="hero__heading">Priser</h1>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <%- include('templates/breadcrumbs'); %>
+
+    <main>
+        <div class="wrapper">
+
+            <div class="price-card-container">
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Diagnose</h3>
+                            <span class="price-card__price--free">Gratis</span>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Når du ringer ind med et problem, så finder vi ud af hvad
+                                der er galt
+                                ganske gratis, det er det vi også kalder diagnosticering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Fjernsupport</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">225.-</span>
+                                <span class="price-card__price">112.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Vores IT-support forgår over via et fjernstyringsprogram
+                                der hedder Splashtop, og indebærer alt som ikke står andre steder på prislisten. Via
+                                fjernstyring kan vi hjælpe dig med dine IT-problemer, uden af at vi skal være fysisk
+                                tilstede hos dig. Prisen på 225kr, skal først betales, når dit problem er løst. Vi
+                                fakturere pr. halve time, og prisen er for 30 minutters support, og ikke pr. løst
+                                problem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Virus fjernelse</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">500.-</span>
+                                <span class="price-card__price">250.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Hvis din computer er blevet inficeret med virus, så er
+                                der stadig en
+                                chance for at redde den. Det er altid værd at prøve at fjerne en virus, og få ens data
+                                ud helskindet, i stedet for at reinstallere computeren med det samme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Optimeringspakke</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">450.-</span>
+                                <span class="price-card__price">225.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Vores optimeringspakke kan være en god løsning, hvis din
+                                computer er
+                                gammel, eller har lidt for meget software installeret. Vi tager simpelthen vægten af
+                                dens skuldre, så den kan performe bedre.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Installation af software</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">99.-</span>
+                                <span class="price-card__price">49.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Står du og skal installere software, men den ikke rigtig
+                                vil som du vil? Så er vi klar til at hjælpe dig.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Rådgivning</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">79.-</span>
+                                <span class="price-card__price">39.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Hvis du mangler rådgivning til enten køb af ny computer,
+                                valg af anti-virus, eller lignende så er vi klar til at hjælpe dig.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Klippekort 3 x 30 minutter</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">545.-</span>
+                                <span class="price-card__price">227.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Det er et økonomisk bedre valg at købe klippekort, i
+                                stedet for at købe
+                                sig til hjælp hver gang man har brug for det.
+                                Ved 3 x 30 minutters klippekortet sparer du 44kr, når du har haft brugt hele
+                                klippekortet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card__sale">50%</div>
+
+                    <div class="price-card__inner">
+                        <div class="price-card__front">
+                            <h3 class="price-card__product">Klippekort double 6 x 30 minutter</h3>
+                            <div class="price-card__price-container">
+                                <span class="price-card__price">999.-</span>
+                                <span class="price-card__price">499.-</span>
+                            </div>
+                            <div class="price-card__arrow">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                        </div>
+                        <div class="price-card__back">
+                            <p class="price-card__description">Det er et økonomisk bedre valg at købe
+                                klippekort, i stedet for at købe
+                                sig til hjælp hver gang man har brug for det.
+                                Ved 6 x 30 minutters klippekortet sparer du 59kr, når du har haft brugt hele
+                                klippekortet</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/priser.js"></script>
+    <script src="/assets/js/breadcrumbs.js"></script>
+
+</body>
+
+</html>

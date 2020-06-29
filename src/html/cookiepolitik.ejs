@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Har du virus eller er din computer langsom? så er pcfejl.dk stedet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl - Cookiepolitik</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero">
+
+    </div>
+
+    <!-- Breadcrumbs -->
+    <%- include('templates/breadcrumbs'); %>
+
+    <main>
+        <div class="politik">
+
+            <h1 class="politik__title">Cookiepolitik</h1>
+
+            <p>PCfejl's website anvender cookies til at tilpasse og forbedre det indhold, der vises på siden. Hvis du
+                ikke ønsker, at der indsamles oplysninger, bør du slette dine cookies og undlade videre brug af
+                websitet.</p>
+
+            <h3 class="politik__heading">Hvad er en cookie?</h3>
+
+            <p>En cookie er en tekstfil, som gemmes på din computer, mobil el. tilsvarende med det formål at
+                genkende den, huske indstillinger, udføre statistik og målrette annoncer.</p>
+
+            <p>En cookie er en passiv fil, der ikke kan indsamle de oplysninger, der er på din computer, eller
+                sprede computervirus og andre skadelige programmer</p>
+
+            <p>Hvordan fjerner eller undgår du cookies? <a
+                    href="http://minecookies.org/cookiehandtering">http://minecookies.org/cookiehandtering</a></p>
+
+            <p>Du har mulighed for at slette eller blokere for cookies. Se vejledning:</p>
+
+            <p>Hvis du sletter eller blokerer cookies vil annoncer kunne blive mindre relevante for dig og optræde
+                hyppigere. Du kan desuden risikere at websitet ikke fungerer optimalt samt at der er indhold, du
+                ikke kan få adgang til.</p>
+
+            <h3 class="politik__heading">Tredjeparts-cookies</h3>
+
+            <p>Websitet indeholder cookies fra tredjeparter, der i varierende omfang kan omfatte:</p>
+
+            <ul class="politik__thirdparty">
+                <li>Google Analytics</li>
+            </ul>
+
+            <h3 class="politik__heading">Ejer og kontaktoplysninger</h3>
+
+            <p>Vores website ejes og publiceres af:</p>
+
+            <p>PCfejl I/S</p>
+
+            <p>Hvis du ønsker nærmere oplysninger om dette website og brugen af cookies, er du velkommen til at kontakte
+                os på kontakt@pcfejl.dk</p>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

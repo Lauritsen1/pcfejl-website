@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/assets/images/logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Virus, fejl, computer, pc">
+
+    <meta name="description"
+        content="På pcfejl.dk hjælper vi dig med dine IT problemer, stort som småt, hvad enten om dit mailprogram ikke virker, har du virus, eller er din computer blevet langsom.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>PC fejl - Når IT skal være nemt</title>
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="101616831480614" theme_color="#007ACC">
+    </div>
+
+    <!-- Header -->
+    <%- include('templates/header'); %>
+
+    <!-- Hero -->
+    <div class="hero">
+
+    </div>
+
+    <main>
+        <div class="politik">
+
+            <h1 class="politik__title">Fjernsupport</h1>
+
+            <h3 class="politik__heading">Hvorfor fjernsupport</h3>
+
+            <p>Fjernsupport giver rigtig god mening, da de fleste problemer kan løses på så kort tid. Så uanset om du
+                bare skal have installeret noget software, eller om du reelt har et problem med din computer, så giver
+                fjernsupport rigtig god mening.</p>
+
+            <h3 class="politik__heading">Hvad er fjernsupport?</h3>
+
+            <p>Fjernsupport er, når en tekniker får adgang til din computer, selvom han ikke fysisk er til stede. Det
+                betyder, at han eller hun vil kunne ændre ting på din computer – installere nye programmer, slette filer
+                og ellers udføre IT support fra hans egen computer. Så hvis dit problem kan løses uden at skulle
+                reparere computeren, så er fjernsupport en god løsning.</p>
+
+            <h3 class="politik__heading">Hvordan fungerer fjernsupport?</h3>
+
+            <p>Det kan måske virke lidt grænseoverskridende at give os adgang til din computer, uden at vi sidder
+                sammen. Men det er faktisk ikke så slemt endda, og vi lægger vægt på, at du føler dig tryg hele vejen.
+                Vi har lavet en hurtig guide nedenunder, som fortæller, hvad du skal gøre, hvis du vil have lavet
+                fjernsupport.</p>
+
+            <ul>
+                <li>Ring til os på 50 40 68 78, og fortæl os om dit problem. Så kan vi sammen vurderer, om det dit
+                    problem er noget vi kan løse, og hvad prisen ville være.</li>
+
+                <li>Oppe i højre side af vores hjemmeside skal du trykke på ”Start fjernsupport”, for at downloade vores
+                    fjernsupport værktøj.</li>
+
+                <li>Når programmet er installeret, giver du bruger ID vores tekniker over telefonen, hvorefter han vil
+                    få adgang til din computer. Du kan følge trygt med i, hvad der laves hele vejen igennem fra start
+                    til slut, og til enhver tid stoppe adgangen, hvis du føler dig utryg.</li>
+            </ul>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('templates/footer'); %>
+
+    <!-- JS -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

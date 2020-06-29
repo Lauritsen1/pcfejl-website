@@ -1,0 +1,267 @@
+@import "style.scss";
+
+//==========
+// Mobile
+
+.tilbud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.index-section-1 {
+    box-sizing: border-box;
+}
+
+.info-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 1.5em;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info {
+    background-color: $primary-color;
+    height: 5em;
+    width: 100%;
+    border: 1px solid lightgrey;
+
+    a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: flex-end;
+
+        i {
+            font-size: 1.5em;
+            color: $primary-color;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5.5em;
+
+        p {
+            display: none;
+            margin: 0;
+            font-size: 1.1em;
+            color: $dark-color;
+        }
+    }
+
+    &__heading {
+        font-size: 1.2em;
+        color: $dark-color;
+        margin: 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__arrow {
+        font-size: 1.2em;
+        color: $dark-color;
+    }
+}
+
+.info:nth-child(1),
+.info:nth-child(2) {
+    border-bottom: none;
+}
+
+.info:last-of-type {
+    margin: 0;
+}
+
+.index-section-2 {
+    color: #393634;
+}
+
+.vision {
+    background-color: $primary-color;
+    margin-top: 1em;
+
+    &__image-container {
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        padding: 1em;
+        color: white;
+
+        h2 {
+            margin-bottom: 1em;
+        }
+        
+        p {
+            line-height: 1.5em;
+        }
+    }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+    .index-section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-flex-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 60em;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info {
+        height: 15em;
+
+        &__top {
+            width: 100%;
+
+            i {
+                font-size: 2em;
+            }
+        }
+
+        &__heading {
+            font-size: 1.5em;
+        }
+
+        &__middle {
+            justify-content: flex-start;
+            width: 100%;
+
+            p {
+                display: flex;
+            }
+        }
+
+        &__bottom {
+            width: 100%;
+        }
+
+        &__arrow {
+            font-size: 1.5em;
+            color: $dark-color;
+        }
+    }
+
+    .info:nth-child(1),
+    .info:nth-child(2) {
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .info:nth-child(2) {
+        border-left: none;
+        border-right: none;
+    }
+
+    .index-section-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vision {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 2em;
+        width: 60em;
+        min-height: 15em;
+
+        &__image-container {
+            height: 100%;
+            
+            img {
+                width: 20em;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+//==========
+// Desktop
+
+@media all and (min-width: 1100px) {
+
+    .index-section-1 {
+        height: 35vh;
+    }
+
+    .info {
+
+        &__middle {
+            p {
+                width: 80%;
+            }
+        }
+    }
+
+    .info-container {
+        transition: transform 0.1s;
+    }
+
+    .info-container:hover {
+        transform: translate(-0.5em, -0.5em);
+        border: 1px solid $primary-color;
+    }
+
+    .info-container:hover .info__heading {
+        color: $primary-color;
+    }
+
+    .info-container:hover .info__arrow {
+        color: $primary-color;
+    }
+
+    .index-section-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+    }
+
+    .vision {
+        margin: 0;
+    }
+}
