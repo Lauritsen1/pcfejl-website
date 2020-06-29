@@ -17,6 +17,40 @@
     }
 }
 
+.open {
+    position: absolute;
+    right: 0;
+    bottom: -3em;
+    background-color: $primary-color;
+    color: white;
+    height: 3em;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__inner-container {
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 1.5em;
+            margin-right: 0.5em;
+        }
+    }
+
+    &__indicator {
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+    }
+
+    &__message {
+        font-size: 1.5em;
+    }
+}
+
 .nav {
     position: absolute;
     top: 5em;
@@ -66,7 +100,18 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
-  background-color: white;
+    background-color: white;
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+    .open {
+        border-radius: 0 0 0 15px;
+        width: 25em;
+    }
 }
 
 //==========
@@ -74,7 +119,6 @@
 
 @media (min-width: 1100px) {
     .header {
-
         &__link {
             text-decoration: none;
         }
@@ -124,5 +168,4 @@
     .hamburger {
         display: none;
     }
-
 }
