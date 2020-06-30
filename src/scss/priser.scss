@@ -85,6 +85,10 @@
     justify-content: flex-end;
   }
 
+  &__arrow--flex {
+    justify-content: space-between;
+  }
+
   &__sale {
     display: flex;
     justify-content: center;
