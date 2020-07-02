@@ -1,13 +1,13 @@
 const gulp = require("gulp");
 const sourcemaps = require("gulp-sourcemaps");
 const connect = require("gulp-connect");
-// const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
 
 
 function jsTask() {
     return gulp.src('src/js/**/*.js')
         .pipe(sourcemaps.init())
-        // .pipe(uglify())
+        .pipe(terser())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/assets/js'))
         .pipe(connect.reload());
