@@ -1,13 +1,3 @@
-// if (time.getHours() <= 10) {
-//     console.log('Vi har åbent')
-// }
-
-// db.collection("openingHours")
-//     .doc('1YEFNC6gZtw4z17UBxDn')
-//     .update({
-
-//     });
-
 db.collection("openingHours")
     .get()
     .then(function (querySnapshot) {

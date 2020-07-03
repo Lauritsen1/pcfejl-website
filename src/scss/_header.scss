@@ -20,25 +20,15 @@
 .open {
     position: absolute;
     right: 0;
-    bottom: -3em;
+    bottom: -2em;
     background-color: $primary-color;
     color: white;
-    height: 3em;
+    height: 2em;
     width: 100%;
     padding: 0 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &__inner-container {
-        display: flex;
-        align-items: center;
-
-        i {
-            font-size: 1.1em;
-            margin-right: 0.5em;
-        }
-    }
 
     &__status {
         width: 1em;
@@ -110,18 +100,7 @@
 
     .open {
         border-radius: 0 0 0 15px;
-        width: 25em;
-
-        &__inner-container {
-            
-            i {
-                font-size: 1.5em;
-            }
-        }
-
-        &__message {
-            font-size: 1.5em;
-        }
+        width: 17em;
     }
 }
 
@@ -130,6 +109,7 @@
 
 @media (min-width: 1100px) {
     .header {
+        
         &__link {
             text-decoration: none;
         }
