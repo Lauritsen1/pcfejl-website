@@ -1,4 +1,6 @@
-@import "theme.scss";
+$primary-color: #007ACC;
+$dark-color: #1D1D1F;
+
 @import "header.scss";
 @import "footer.scss";
 
@@ -10,7 +12,6 @@
 }
 
 body {
-    margin: 0;
     background-color: whitesmoke;
 }
 
