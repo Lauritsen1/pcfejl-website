@@ -14,7 +14,7 @@ db.collection("openingHours")
                 openingHours.textContent = 'Åbent nu, vi lukker kl 22:00';
                 indicator.style.backgroundColor = 'lightgreen';
             } else {
-                openingHours.textContent = 'Lukket, vi åbner kl 17:00';
+                openingHours.textContent = 'Lukket, vi åbner kl 10:00';
                 indicator.style.backgroundColor = 'red';
             }
         });
