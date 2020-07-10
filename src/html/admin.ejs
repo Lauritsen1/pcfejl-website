@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>PCfejl - Admin</title>
+</head>
+
+<body>
+
+    <main>
+
+        <header class="admin-header">
+            <h1 class="admin-header__heading">PCfejl/Admin</h1>
+            <button class="signout">Log ud</button>
+        </header>
+
+        <div class="admin-wrapper">
+
+            <div class="admin-åbningstider">
+                <h2 class="admin-åbningstider__heading">Åben/Lukke status</h2>
+                <div class="admin-åbningstider__inner-container">
+
+                    <form class="admin-åbningsstatus-form">
+                        
+                        <h3>Status</h3>
+                        <select class="admin-åbningsstatus__select" name="">
+                            <option value="true">Åben</option>
+                            <option value="false">Lukket</option>
+                        </select>
+
+                        <h3>Åben besked</h3>
+                        <input class="open-message"type="text">
+                        <h3>Lukke besked</h3>
+                        <input class="closed-message" type="text">
+                        
+                        <button>Update</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+
+    <script src="/assets/js/firebase-config.js"></script>
+    <script src="/assets/js/admin.js"></script>
+</body>
+
+</html>
