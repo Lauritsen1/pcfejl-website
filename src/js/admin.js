@@ -41,7 +41,7 @@ db.collection("openingHours")
 let åbningsStatusForm = document.querySelector('.admin-åbningsstatus-form');
 åbningsStatusForm.addEventListener('submit', () => {
     event.preventDefault();
-    
+
     db.collection("openingHours")
         .doc("1YEFNC6gZtw4z17UBxDn")
         .update({
