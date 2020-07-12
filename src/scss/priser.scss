@@ -70,11 +70,6 @@
     color: $primary-color;
   }
 
-  &__price:first-of-type {
-    color: red;
-    text-decoration: line-through;
-  }
-
   &__price--free {
     font-size: 2em;
     color: $primary-color;
@@ -88,24 +83,9 @@
   &__arrow--flex {
     justify-content: space-between;
   }
-
-  &__sale {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: -1.5em;
-    top: -1.5em;
-    z-index: 1;
-    background-color: $primary-color;
-    border-radius: 50%;
-    width: 3em;
-    height: 3em;
-    color: white;
-  }
 }
 
-// .price-card:hover 
+// .price-card:hover
 // .price-card__inner {
 //   transform: rotateY(180deg);
 // }
