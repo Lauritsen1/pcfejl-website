@@ -168,6 +168,11 @@
 
         &__bottom--link {
             justify-content: end;
+
+            i {
+                width: 100%;
+                text-align: end;
+            }
         }
 
         &__arrow {
