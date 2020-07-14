@@ -54,3 +54,28 @@ let åbningsStatusForm = document.querySelector('.admin-åbningsstatus-form');
         })
 
 });
+
+let bookingTemplate = document.querySelector('.booking-template .admin-booking__appointment');
+let bookingContainer = document.querySelector('.admin-booking');
+
+db.collection("booking")
+    .get()
+    .then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+            let data = doc.data();
+
+            let clone = bookingTemplate.cloneNode(true);
+            clone.querySelector('.admin-booking__name').textContent = data.name;
+            clone.querySelector('.admin-booking__email').textContent = data.email;
+            clone.querySelector('.admin-booking__tlf').textContent = data.tlf;
+            clone.querySelector('.admin-booking__day').textContent = data.day;
+            clone.querySelector('.admin-booking__time').textContent = data.time;
+            clone.querySelector('.admin-booking__message').textContent = data.message;
+
+            bookingContainer.appendChild(clone);
+
+        });
+    })
+    .catch(function (error) {
+        console.log("Error getting documents: ", error);
+    });

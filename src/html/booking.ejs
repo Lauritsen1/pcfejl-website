@@ -36,12 +36,10 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <title>PC fejl - Når IT skal være nemt</title>
+    <title>PCfejl - Booking</title>
 </head>
 
 <body>
-
-    <div class="tilbud">Åbningstilbud 50% til d. 12-07-2020</div>
 
     <!-- Header -->
     <%- include('templates/header'); %>
@@ -58,8 +56,53 @@
 
         <div class="wrapper">
 
-        </div>
+            <div class="booking-container">
+                <div class="booking-container__text">
+                    <h2>Book en tid.</h2>
+                    <p>Du kan booke en tid, eller ringe direkte til vores telefonnummer for at få hjælp.
+                        Fordelen ved at booke en tid, er at du er sikker på at få hjælp på det tidspunkt som passer dig.
+                        Du kan kun booke en tid i indeværende uge.</p>
+                </div>
+                <div>
+                    <form class="booking-form">
+                        <div id="error"></div>
+                        <input name="name" id="name" type="text" placeholder="Navn">
+                        <input name="email" id="email" type="email" placeholder="Email">
+                        <input name="tlf" id="tlf" type="text" placeholder="Tlf. nr.">
+                        <fieldset class="booking-form__date-time">
+                            <select name="day" id="day">
+                                <option value="null">Vælg en dag</option>
+                                <option value="mandag">Mandag</option>
+                                <option value="tirsdag">Tirsdag</option>
+                                <option value="onsdag">Onsdag</option>
+                                <option value="torsdag">Torsdag</option>
+                                <option value="fredag">Fredag</option>
+                                <option value="lørdag">Lørdag</option>
+                                <option value="Søndag">Søndag</option>
+                            </select>
+                            <select name="time" id="time">
+                                <option value="null">Vælg en tid</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                        </fieldset>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Hvad kan vi hjælpe med"></textarea>
+                        <fieldset class="booking-form__btn-container">
+                            <button>Book</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
 
+        </div>
     </main>
 
     <!-- Footer -->
@@ -77,6 +120,7 @@
 
     <script src="/assets/js/firebase-config.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/booking.js"></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

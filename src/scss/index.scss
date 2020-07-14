@@ -152,11 +152,22 @@
 
             p {
                 display: flex;
+                flex-direction: column;
             }
         }
 
         &__bottom {
             width: 100%;
+            justify-content: start;
+
+            p {
+                color: $primary-color;
+                font-size: 1.5em;
+            }
+        }
+
+        &__bottom--link {
+            justify-content: end;
         }
 
         &__arrow {

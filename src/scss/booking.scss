@@ -1,0 +1,135 @@
+@import "style.scss";
+
+//==========
+// Mobile
+
+.booking-container {
+    &__text {
+        margin-bottom: 1em;
+
+        p {
+            line-height: 1.5;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    input {
+        height: 3em;
+        padding-left: 0.5em;
+    }
+
+    input::placeholder {
+        font-size: 1.2em;
+        font-style: italic;
+    }
+
+    textarea {
+        height: 10em;
+        resize: none;
+        text-align: start;
+        padding: 0.5em;
+    }
+
+    textarea::placeholder {
+        font-size: 1.2em;
+        font-style: italic;
+    }
+
+    &__date-time {
+        display: flex;
+        border: none;
+        gap: 0.5em;
+
+        select {
+            width: 50%;
+            height: 3em;
+            font-style: italic;
+            padding-left: 0.5em;
+        }
+    }
+
+    &__btn-container {
+        text-align: end;
+        border: none;
+
+        button {
+            height: 3em;
+            width: 8em;
+            border: none;
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+    .booking-form {
+        input {
+            height: 4.5em;
+        }
+
+        input::placeholder {
+            font-size: 1.3em;
+        }
+
+        textarea::placeholder {
+            font-size: 1.2em;
+        }
+
+        &__date-time {
+            input {
+                box-sizing: border-box;
+                font-size: 1em;
+            }
+
+            select {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+//==========
+// Desktop
+
+@media all and (min-width: 1100px) {
+    .booking-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5em;
+
+        &__text {
+            margin-bottom: 1em;
+        }
+    }
+
+    .booking-form {
+
+        input {
+            height: 4.5em;
+            padding-left: 2em;
+        }
+
+        textarea {
+            height: 12em;
+            padding: 2em;
+        }
+
+        &__date-time {
+
+            select {
+                height: 4.5em;
+                padding-left: 2em;
+            }
+        }
+    }
+}
