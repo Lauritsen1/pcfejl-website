@@ -2,11 +2,10 @@
 // Mobile
 
 .footer {
-    background-color: #1d1d1f;
-    color: white;
+    background-color: whitesmoke;
+    color: $dark-color;
     padding: 3em 5%;
-    margin-top: 2em;
-
+    
     div {
         margin-bottom: 3em;
     }
@@ -19,18 +18,19 @@
         
 
         img {
-            height: 3em;
+            height: 2em;
         }
     }
 
     &__heading {
         color: $primary-color;
         font-size: 1.5em;
+        font-weight: bold;
         margin-bottom: 1em;
     }
 
     &__link {
-        color: white;
+        color: $dark-color;
     }
 }
 
@@ -60,7 +60,7 @@
     }
 }
 
-.hours {
+.services {
     &__list {
         list-style-type: none;
         padding: 0;
@@ -117,7 +117,7 @@
             margin-right: 0.5em;
 
             a {
-                color: white;
+                color: $dark-color;
             }
         }
 
@@ -139,6 +139,7 @@
     .footer {
         display: flex;
         justify-content: space-between;
+        padding: 3em 20%;
 
         div {
             margin: 0;

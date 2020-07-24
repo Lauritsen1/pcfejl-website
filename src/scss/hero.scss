@@ -5,59 +5,55 @@
 
 .hero {
     display: flex;
-    align-items: flex-end;
-    height: 60vh;
-    background-image:
-    linear-gradient(0deg, rgba($primary-color, 0.5), rgba($primary-color, 0.5)), 
-    url("/assets/images/workspace.jpg");
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-image: linear-gradient(0deg, rgba(black, 0.7), rgba(black, 0.7)), url("/assets/images/workspace.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 5%;
 
-    &__text{
-        margin-bottom: 5%;
-        
-        h1 {
-            font-size: 1.5em;
-            color: $primary-color;
-            margin: 0;
-        }
+    &__forside-heading {
+        font-size: 1.5em;
+        color: white;
+        margin: 0 0 0.5em 0;
+    }
 
-        p {
-            color: white;
-            margin: 0;
-        }
+    p {
+        font-size: 0.8em;
+        line-height: 1.5;
+        margin: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        color: white;
     }
 
     &__heading {
         font-size: 3em;
         color: white;
     }
-}
-
-.hero--index {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    h1 {
-        font-size: 1.5em;
-        margin: 0;
-        margin-bottom: 0.5em;
-    }
-
-    p {
-        font-size: 1.1em;
-        margin: 0;
-        margin-bottom: 1em;
-        text-align: center;
-    }
 
     &__phone {
-        text-decoration: underline;
+        color: $primary-color;
     }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+    .hero {
+        &__forside-heading {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+
 }
 
 //==========
@@ -65,39 +61,8 @@
 
 @media (min-width: 1100px) {
     .hero {
-        height: 65vh;
+        height: 52vh;
         background-position: center 30%;
         background-attachment: fixed;
-
-        &__text{
-            width: 50%;
-            
-            h1 {
-                font-size: 2em;
-                font-weight: normal;
-            }
-
-            p {
-                font-size: 2em;
-            }
-        }
-
-        &__heading {
-            font-size: 5em;
-        }
-        
-    }
-
-    .hero--index {
-    
-        h1 {
-            font-size: 3em;
-
-        }
-    
-        p {
-            font-size: 1.5em;
-            line-height: 1.5;
-        }
     }
 }

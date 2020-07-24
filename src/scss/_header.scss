@@ -5,15 +5,15 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: $primary-color;
     display: flex;
+    background-color: white;
     justify-content: space-between;
     align-items: center;
     height: 5em;
     padding: 0 5%;
 
     &__logo {
-        height: 3em;
+        height: 2em;
     }
 }
 
@@ -91,7 +91,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
-    background-color: white;
+    background-color: $dark-color;
 }
 
 //==========
@@ -110,6 +110,9 @@
 
 @media (min-width: 1100px) {
     .header {
+        height: 8vh;
+        padding: 0 20%;
+        justify-content: space-between;
         
         &__link {
             text-decoration: none;
@@ -126,6 +129,7 @@
 
         ul {
             display: flex;
+            align-items: center;
             list-style-type: none;
 
             li {
@@ -135,22 +139,22 @@
 
         &__link {
             text-decoration: none;
-            color: white;
-            font-size: 1.5em;
+            color: $dark-color;
+            font-size: 1.1em;
         }
     }
 
     .download {
         display: block;
-        background-color: white;
         border: none;
-        color: $primary-color;
-        font-size: 1.1em;
-        height: 2.5em;
+        color: $dark-color;
+        font-size: 1em;
+        height: 2em;
         width: 10em;
         padding: 0.2em 0.5em;
         cursor: pointer;
-        border-radius: 50px;
+        border-radius: 3px;
+        background-color: #FDE428;
     }
 
     .download--color {
