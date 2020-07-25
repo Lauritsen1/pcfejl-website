@@ -1,0 +1,62 @@
+@import "style.scss";
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    justify-items: center;
+    gap: 5em;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 18em;
+    min-width: 18em;
+
+    &__icon {
+        color: $primary-color;
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        width: 2em;
+        background-color: $primary-color;
+        margin: 0.5em 0;
+    }
+
+    &__description {
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &__link {
+        margin-top: 0.5em;
+    }
+}
+
+.service:last-of-type {
+    margin: 0;
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+    .services-container {
+
+        margin: 2em 0;
+    }
+
+}
+
+//==========
+// Desktop
+
+@media all and (min-width: 1100px) {
+
+}

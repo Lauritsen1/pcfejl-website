@@ -99,6 +99,13 @@
 
 @media all and (min-width: 768px) {
 
+    .nav {
+
+        ul {
+            padding: 0;
+        }
+    }
+
     .open {
         border-radius: 0 0 0 15px;
         width: max-content;

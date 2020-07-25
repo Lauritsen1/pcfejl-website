@@ -148,7 +148,7 @@
     }
 
     .employee-container {
-        grid-template-columns: 20% 20% 20%;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         gap: 2.5em;
         margin: 0;
