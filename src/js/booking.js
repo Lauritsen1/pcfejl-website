@@ -36,4 +36,17 @@ form.addEventListener('submit', (event) => {
         return false;
     }
 
+    db.collection("booking")
+        .add({
+            name: name.value,
+            email: email.value,
+            day: day.value,
+            tlf: tlf.value,
+            time: time.value,
+            message: message.value
+        })
+        .then(function () {
+            window.location.replace(window.location);
+        });
+
 });
