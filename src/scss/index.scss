@@ -90,7 +90,6 @@
     background-color: $primary-color;
 
     &__image-container {
-
         img {
             display: block;
             width: 100%;
@@ -105,9 +104,67 @@
         h2 {
             margin-bottom: 1em;
         }
-        
+
         p {
             line-height: 1.5em;
+        }
+    }
+}
+
+.whyus {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: whitesmoke;
+    gap: 2em;
+
+    h2 {
+        color: $primary-color;
+    }
+
+    &__description {
+        ul {
+            list-style-type: none;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-left: 40px;
+
+            li::before {
+                content: "\2022";
+                color: $primary-color;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+
+    &__number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span:first-of-type {
+            color: $dark-color;
+            font-size: 1.5em;
+        }
+
+        span:last-of-type {
+            color: $primary-color;
+            font-size: 2.5em;
         }
     }
 }
@@ -116,7 +173,6 @@
 // Tablet
 
 @media all and (min-width: 768px) {
-    
     .info-flex-container {
         flex-direction: row;
         justify-content: center;
@@ -202,7 +258,7 @@
 
         &__image-container {
             height: 100%;
-            
+
             img {
                 width: 20em;
                 height: 100%;
@@ -216,7 +272,6 @@
 // Desktop
 
 @media all and (min-width: 1100px) {
-
     .info-flex-container {
         justify-content: space-between;
         padding: 0 20%;
@@ -224,7 +279,6 @@
     }
 
     .info {
-
         &__middle {
             p {
                 width: 80%;
@@ -249,13 +303,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 40vh;
     }
 
-    .index-section-2 {
-        height: 40vh;
+    .index-section-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 20%;
     }
 
     .vision {
         margin: 0;
+    }
+
+    .whyus {
+        flex-direction: row;
+        padding: 2.5em;
+    
+        &__description {
+            width: 50%;
+            min-width: 30.250em;
+
+            ul {
+
+            }
+        }
+    
+        &__call {
+            width: 50%;
+            min-width: 30.250em;
+            align-items: center;
+
+    
+            img {
+                width: 50%;
+            }
+        }
     }
 }
