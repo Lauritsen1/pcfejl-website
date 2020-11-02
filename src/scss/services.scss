@@ -13,6 +13,7 @@
     align-items: center;
     max-width: 18em;
     min-width: 18em;
+    margin-bottom: 5em;
 
     &__icon {
         color: $primary-color;
@@ -31,11 +32,6 @@
     &__description {
         line-height: 1.5;
         
-    }
-
-    &__link {
-        margin-top: 0.5em;
-        width: 100%;
     }
 }
 
