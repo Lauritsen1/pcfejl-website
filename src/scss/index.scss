@@ -86,31 +86,6 @@
     margin: 0;
 }
 
-.vision {
-    background-color: $primary-color;
-
-    &__image-container {
-        img {
-            display: block;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &__text {
-        padding: 1em;
-        color: white;
-
-        h2 {
-            margin-bottom: 1em;
-        }
-
-        p {
-            line-height: 1.5em;
-        }
-    }
-}
-
 .whyus {
     display: flex;
     flex-direction: column;
@@ -164,8 +139,50 @@
 
         span:last-of-type {
             color: $primary-color;
-            font-size: 2.5em;
+            font-size: 2em;
         }
+    }
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: whitesmoke;
+    gap: 1em;
+
+    div:first-of-type {
+
+        h2 {
+            color: $primary-color;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 1.2em;
+        font-style: italic;
+    }
+
+    &__text {
+        font-style: italic;
+        margin: 1em 0;
+        line-height: 1.5;
+    }
+
+    &__text::before {
+        content: '❝';
+    }
+
+    &__text::after {
+        content: '❞';
+    }
+
+    &__name {
+        font-style: italic;
     }
 }
 
@@ -242,30 +259,6 @@
         border-left: none;
         border-right: none;
     }
-
-    .index-section-2 {
-        display: flex;
-        justify-content: center;
-    }
-
-    .vision {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        gap: 2em;
-        width: 60em;
-        min-height: 15em;
-
-        &__image-container {
-            height: 100%;
-
-            img {
-                width: 20em;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
 }
 
 //==========
@@ -302,43 +295,61 @@
     .index-section-2 {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 40vh;
-    }
-
-    .index-section-3 {
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         padding: 3em 20%;
-    }
-
-    .vision {
-        margin: 0;
+        gap: 3em;
     }
 
     .whyus {
         flex-direction: row;
         padding: 2.5em;
-    
+        min-width: 67.500em;
+        gap: 0;
+
         &__description {
             width: 50%;
-            min-width: 30.250em;
-
-            ul {
-
-            }
         }
     
         &__call {
             width: 50%;
-            min-width: 30.250em;
             align-items: center;
-
     
             img {
                 width: 50%;
             }
         }
+
+        &__number {
+
+            span:last-of-type {
+                color: $primary-color;
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        background-color: whitesmoke;
+        min-width: 67.500em;
+
+        div:first-of-type {
+    
+            img {
+                width: 50%;
+            }
+        }
+    
+        div {
+            width: 50%;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+    
     }
 }
