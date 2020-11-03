@@ -1,5 +1,5 @@
-$primary-color: #007ACC;
-$dark-color: #1D1D1F;
+$primary-color: #007acc;
+$dark-color: #1d1d1f;
 
 @import "header.scss";
 @import "footer.scss";
@@ -16,7 +16,7 @@ p {
 }
 
 #number-font {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 
@@ -41,5 +41,4 @@ p {
     .wrapper {
         padding: 0 20%;
     }
-
 }

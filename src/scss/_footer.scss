@@ -5,7 +5,7 @@
     background-color: whitesmoke;
     color: $dark-color;
     padding: 3em 5%;
-    
+
     div {
         margin-bottom: 3em;
     }
@@ -15,8 +15,6 @@
     }
 
     &__logo {
-        
-
         img {
             height: 2em;
         }
@@ -105,7 +103,6 @@
 }
 
 .social {
-
     &__list {
         display: flex;
         list-style-type: none;
@@ -133,6 +130,13 @@
 }
 
 //==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+}
+
+//==========
 // Desktop
 
 @media (min-width: 800px) {
@@ -148,6 +152,5 @@
         &__logo {
             text-align: center;
         }
-
     }
 }
