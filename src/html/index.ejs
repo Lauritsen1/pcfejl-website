@@ -30,6 +30,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css">
 
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
 
@@ -99,7 +102,7 @@
             <div class="index-section-2">
 
                 <div class="what">
-                    <div>
+                    <div class="what__text">
                         <h2 class="what__title">Hvad kan vi hjælpe med?</h2>
                         <p>Du kender måske det, at din computer driller, Outlook vil ikke åbne, eller at din internet
                             browser hænger.</p>
@@ -113,25 +116,67 @@
                             diagnosticere fejlen.</p>
                         <p>Vi bestræber os efter, at være den IT-helpdesk, som du vil benytte nu, og i fremtiden.</p>
                     </div>
-                    <div>
-                        <img src="/assets/images/mission.JPG" alt="">
-                    </div>
                 </div>
 
-                <div class="reviews">
-                    <div>
-                        <h2>Kunde anmeldelse</h2>
-                        <img src="/assets/images/Trustpilot_logo.png" alt="">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <h2 class="swiper-container__heading">Kunde anmeldelser</h2>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                    <h2 class="review__title">En virkelig god hjælp.…</h2>
+                                    <p class="review__text">
+                                        En meget fin og forstålig forklaring af Mads. Da jeg forklarede, hvad det
+                                        drejede sig om, så
+                                        1--2-3
+                                        så kørte den bare, Jeg vil anbefale pcfejl.dk som super perfekt, når man er kørt
+                                        fast..
+                                    </p>
+                                    <p class="review__name">- Arne</p>
+                                </div>
+                                <img src="/assets/images/trustpilot-stars.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                    <h2 class="review__title">Problemer med RAM</h2>
+                                    <p class="review__text">
+                                        Jeg har flere gange forsøgt at få mine Ram til at køre på den adviserede
+                                        clockspeed,
+                                        dog uden held... pcfejl.dk var gode til at forklare, og give mig "step by step"
+                                        instruktioner, så de kunne køre som de skulle.
+                                        Vil klart bruge dem igen!
+                                    </p>
+                                    <p class="review__name">- Nicolai</p>
+                                </div>
+                                <img src="/assets/images/trustpilot-stars.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                    <h2 class="review__title">5 stjerner herfra</h2>
+                                    <p class="review__text">
+                                        god hurtig hjælp.
+                                    </p>
+                                    <p class="review__name">- Thorbjørn</p>
+                                </div>
+                                <img src="/assets/images/trustpilot-stars.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2 class="reviews__title">En virkelig god hjælp.…</h2>
-                        <p class="reviews__text">
-                            En meget fin og forstålig forklaring af Mads. Da jeg forklarede, hvad det drejede sig om, så
-                            1--2-3
-                            så kørte den bare, Jeg vil anbefale pcfejl.dk som super perfekt, når man er kørt fast..
-                        </p>
-                        <span class="reviews__name">- Arne</span>
-                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
 
                 <div class="whyus">
@@ -151,7 +196,7 @@
                             på!</p>
                     </div>
                     <div class="whyus__call">
-                        <img src="/assets/images/pcfejl-logo.svg" alt="">
+
                         <div class="whyus__number">
                             <span>Ring til os på</span>
                             <span id="number-font">+45 89 87 07 46</span>
@@ -169,6 +214,11 @@
 
     <!-- JS -->
     <script src="/assets/js/script.js"></script>
+
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/swiper.config.js"></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
