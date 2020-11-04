@@ -50,130 +50,167 @@
     <main>
         <div class="wrapper">
 
-            <table class="price-table">
-                <tr>
-                    <th>Services</th>
-                    <th>Pris</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>Diagnose</td>
-                    <td>Gratis</td>
-                    <td class="price-table__link"><a href="/services/"></a></td>
-                </tr>
-                <tr>
-                    <td>Fjernsupport</td>
-                    <td>225.-</td>
-                    <td class="price-table__link">pr. halve time</td>
-                </tr>
-                <tr>
-                    <td>Virus fjernelse</td>
-                    <td>500.-</td>
-                    <td class="price-table__link"><a href="/services/"></a></td>
-                </tr>
-                <tr>
-                    <td>Optimeringspakke</td>
-                    <td>450.-</td>
-                    <td class="price-table__link"><a href="/services/"></a></td>
-                </tr>
-                <tr>
-                    <td>Installation af software</td>
-                    <td>99.-</td>
-                    <td class="price-table__link">pr. installation</td>
-                </tr>
-                <tr>
-                    <td>Rådgivning</td>
-                    <td>79.-</td>
-                    <td class="price-table__link">pr. råd</td>
-                </tr>
-                <tr>
-                    <th>Tilkøb</th>
-                </tr>
-                <tr>
-                    <td>Klippekort 3 x 30 minutter</td>
-                    <td>545.-</td>
-                    <td class="price-table__link"><a href="/services/"></a></td>
-                </tr>
-                <tr>
-                    <td>PCfejl abonnement</td>
-                    <td>700.-</td>
-                    <td class="price-table__link">pr. mdr</td>
-                </tr>
-            </table>
+            <div class="priser-container">
 
+                <div class="price-card">
+                    <h2 class="price-card__title">Privat</h2>
 
-            <div class="services-container">
+                    <hr class="price-card__line price-card__line--big">
 
-                <div class="service">
-                    <i class="service__icon fas fa-search"></i>
-                    <h2 class="service__title">Diagnose</h2>
-                    <hr>
-                    <p class="service__description">Når du ringer ind med et problem, så finder vi ud af hvad
-                        der er galt
-                        ganske gratis, det er det vi også kalder diagnosticering.</p>
+                    <div class="price-card__fjernsupport">
+                        <h2 class="price-card__title">Fjernsupport</h2>
+                        <div>
+                            <p class="price-card__price">320 kr.</p>
+                            <p class="price-card__detail">Pr. halve time</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Typiske opgaver</h3>
+                                <p class="price-card__detail">Vi tager imod alle opgaver</p>
+                            </div>
+                            <div>
+                                <p>Opsætning af mail</p>
+                                <p>Rådgivning</p>
+                                <p>Installation af software</p>
+                                <p>Virus beskyttelse</p>
+                                <p>Diverse fejlmeddelelser</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="price-card__detail">Vi fakturere mindst ½ time</p>
+                            <p class="price-card__detail">Vi fakturere kun ved løste opgaver</p>
+                        </div>
+                    </div>
+
+                    <hr class="price-card__line price-card__line--small">
+
+                    <div class="price-card__onsite">
+                        <div>
+                            <h2 class="price-card__title">On-site support</h2>
+                            <p class="price-card__detail">Kun i weekenden</p>
+                        </div>
+                        <div>
+                            <p class="price-card__price">520 kr.</p>
+                            <p class="price-card__detail">Pr. halve time</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Transport priser</h3>
+                                <p class="price-card__detail">Startpunkt: Køge centrum</p>
+                                <p class="price-card__detail">Kun sjælland</p>
+                            </div>
+                            <div>
+                                <p>15km: 100 kr </p>
+                                <p>30km: 220 kr</p>
+                                <p>50km: 370 kr</p>
+                                <p>Derefter 2 kr per kilometer</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="price-card__detail">Vi fakturere mindst ½ time</p>
+                            <p class="price-card__detail">Vi fakturere kun ved løste opgaver, <br> dog refunderes
+                                transport prisen ikke</p>
+                        </div>
+                    </div>
+
+                    <hr class="price-card__line price-card__line--small">
+
+                    <div class="price-card__abonnement">
+                        <h2 class="price-card__title">Abonnement</h2>
+                        <div>
+                            <p class="price-card__price">500 kr</p>
+                            <p class="price-card__detail">Pr. mdr</p>
+                        </div>
+                        <ul>
+                            <li>Ubegrænset fjernsupport</li>
+                            <li>Fri telefonsupport</li>
+                            <li>Dokumentation</li>
+                            <li>Alle hverdage</li>
+                            <li>Weekend support 10 - 22</li>
+                            <li><span id="underline">Ikke</span> enhedsbegrænset</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="service">
-                    <i class="service__icon fas fa-headset"></i>
-                    <h2 class="service__title">Fjernsupport</h2>
-                    <hr>
-                    <p class="service__description">Fjernsupport giver fjernadgang til din computer, så
-                        IT-Supporteren kan se problemet med egne øjne, for at hjælpe med problemet.</p>
-                </div>
+                <div class="price-card">
+                    <h2 class="price-card__title">Erhverv</h2>
 
-                <div class="service">
-                    <i class="service__icon fas fa-exclamation-triangle"></i>
-                    <h2 class="service__title">Virus fjernelse</h2>
-                    <hr>
-                    <p class="service__description">Vi hjælper dig med at fjerne virus, og sikre at du for
-                        fremtiden er bedre beskyttet mod virus.</p>
-                </div>
+                    <hr class="price-card__line price-card__line--big">
 
-                <div class="service">
-                    <i class="service__icon fas fa-tachometer-alt"></i>
-                    <h2 class="service__title">Optimeringspakke</h2>
-                    <hr>
-                    <p class="service__description">Vores optimeringspakke kan hjælpe med at bringe en gammel
-                        langsom computer til livs igen. Vi prøver at løfte vægten af computerens skuldre, så den
-                        kan kører bedre.</p>
-                </div>
+                    <div class="price-card__fjernsupport">
+                        <h2 class="price-card__title">Fjernsupport</h2>
+                        <div>
+                            <p class="price-card__price">375 kr.</p>
+                            <p class="price-card__detail">Pr. halve time</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Typiske opgaver</h3>
+                                <p class="price-card__detail">Vi tager imod alle opgaver</p>
+                            </div>
+                            <div>
+                                <p>Opsætning af mail</p>
+                                <p>Rådgivning</p>
+                                <p>Installation af software</p>
+                                <p>Virus beskyttelse</p>
+                                <p>Diverse fejlmeddelelser</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="price-card__detail">Vi fakturere mindst ½ time</p>
+                            <p class="price-card__detail">Vi fakturere kun ved løste opgaver</p>
+                        </div>
+                    </div>
 
-                <div class="service">
-                    <i class="service__icon fas fa-file-download"></i>
-                    <h2 class="service__title">Installation af software</h2>
-                    <hr>
-                    <p class="service__description">Står du og skal installere software, men den ikke rigtig
-                        vil som du vil? Så er vi klar til at hjælpe dig.</p>
-                </div>
+                    <hr class="price-card__line price-card__line--small">
 
-                <div class="service">
-                    <i class="service__icon fas fa-question-circle"></i>
-                    <h2 class="service__title">Rådgivning</h2>
-                    <hr>
-                    <p class="service__description">Hvis du mangler rådgivning til enten køb af ny computer,
-                        valg af anti-virus, eller lignende så er vi klar til at hjælpe dig.</p>
-                </div>
+                    <div class="price-card__onsite">
+                        <div>
+                            <h2 class="price-card__title">On-site support</h2>
+                            <p class="price-card__detail">Kun i weekenden</p>
+                        </div>
+                        <div>
+                            <p class="price-card__price">595 kr.</p>
+                            <p class="price-card__detail">Pr. halve time</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Transport priser</h3>
+                                <p class="price-card__detail">Startpunkt: Køge centrum</p>
+                                <p class="price-card__detail">Kun sjælland</p>
+                            </div>
+                            <div>
+                                <p>15km: 100 kr </p>
+                                <p>30km: 220 kr</p>
+                                <p>50km: 370 kr</p>
+                                <p>Derefter 2 kr per kilometer</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="price-card__detail">Vi fakturere mindst ½ time</p>
+                            <p class="price-card__detail">Vi fakturere kun ved løste opgaver, <br> dog refunderes
+                                transport prisen ikke</p>
+                        </div>
+                    </div>
 
-                <!-- <div class="service">
-                    <i class="service__icon fas fa-exclamation-triangle"></i>
-                    <h2 class="service__title">Klippekort 3 x 30 minutter</h2>
-                    <hr>
-                    <p class="service__description">Det er et økonomisk bedre valg at købe klippekort, i
-                        stedet for at købe
-                        sig til hjælp hver gang man har brug for det.
-                        Ved 3 x 30 minutters klippekortet sparer du 44kr, når du har haft brugt hele
-                        klippekortet.</p>
-                </div>
+                    <hr class="price-card__line price-card__line--small">
 
-                <div class="service">
-                    <i class="service__icon fas fa-exclamation-triangle"></i>
-                    <h2 class="service__title">PCfejl abonnement</h2>
-                    <hr>
-                    <p class="service__description">Vores månedlige abonnoment indholder;
-                        Fjernsupport, Virus Fjernelse, Installation af software & Rådgivning.
-                        Til én samlet værdi af 903,- Samlet i en stor pakke, som du kan tage brug af så mange
-                        gange du har lyst, i en månede</p>
-                </div> -->
+                    <div class="price-card__abonnement">
+                        <h2 class="price-card__title">Abonnement</h2>
+                        <div>
+                            <p class="price-card__price">800 kr</p>
+                            <p class="price-card__detail">Pr. mdr</p>
+                        </div>
+                        <ul>
+                            <li>Ubegrænset fjernsupport</li>
+                            <li>Fri telefonsupport</li>
+                            <li>Dokumentation</li>
+                            <li>Alle hverdage</li>
+                            <li>Weekend support 10 - 22</li>
+                            <li><span id="underline">Ikke</span> enhedsbegrænset</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
 
