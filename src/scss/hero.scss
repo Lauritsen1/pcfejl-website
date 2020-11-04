@@ -43,7 +43,6 @@
 // Tablet
 
 @media all and (min-width: 768px) {
-
     .hero {
         &__forside-heading {
             font-size: 2em;
@@ -53,7 +52,6 @@
             font-size: 1.1em;
         }
     }
-
 }
 
 //==========
@@ -64,5 +62,18 @@
         height: 52vh;
         background-position: center 30%;
         background-attachment: fixed;
+        background-size: 110%;
+        animation: zoomEffect 4s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zoomEffect {
+        from {
+            background-size: 110%;
+        }
+
+        to {
+            background-size: 100%;
+        }
     }
 }

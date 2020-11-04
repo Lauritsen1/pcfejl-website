@@ -2,8 +2,12 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    speed: 1500,
+    autoplay: {
+        delay: 10000,
+    },
     // spaceBetween: 8,
-    
+
     slidesPerView: 3,
 
     breakpoints: {
@@ -20,8 +24,8 @@ var mySwiper = new Swiper('.swiper-container', {
         },
     },
 
-        // If we need pagination
-        pagination: {
+    // If we need pagination
+    pagination: {
         el: '.swiper-pagination',
     },
 
@@ -35,4 +39,12 @@ var mySwiper = new Swiper('.swiper-container', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-})
+});
+
+document.querySelector('.swiper-container').addEventListener('mouseenter', () => {
+    mySwiper.autoplay.stop();
+});
+
+document.querySelector('.swiper-container').addEventListener('mouseleave', () => {
+    mySwiper.autoplay.start();
+});
