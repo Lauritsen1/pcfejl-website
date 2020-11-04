@@ -8,8 +8,8 @@ function handleIntersection (entries) {
             whatTitle.classList.remove("what__title--animation");
             entry.target.classList.remove("what__text-inner--animation");
         } else {
-            whatTitle.classList.add("what__title--animation");
-            entry.target.classList.add("what__text-inner--animation");
+            // whatTitle.classList.add("what__title--animation");
+            // entry.target.classList.add("what__text-inner--animation");
         }
     });
 }
