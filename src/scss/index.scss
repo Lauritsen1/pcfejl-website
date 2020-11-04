@@ -8,13 +8,13 @@
     flex-direction: column;
     align-items: center;
     margin: 3em 0;
-    gap: 3em;
 
     hr {
         background-color: $primary-color;
         border: none;
-        height: 60%;
-        width: 1px;
+        height: 1px;
+        width: 50%;
+        margin: 3em 0;
     }
 }
 
@@ -24,7 +24,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1em;
 
     i {
         font-size: 3em;
@@ -34,6 +33,7 @@
     h3 {
         color: gray;
         font-weight: normal;
+        margin: 1em 0 0.5em 0;
     }
 
     p {
@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 3em;
+    margin-bottom: 5em;
 
     h2 {
         color: $dark-color;
@@ -114,6 +115,7 @@
 .swiper-container {
     width: 100%;
     height: 375px;
+    margin-bottom: 5em;
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
 
@@ -164,6 +166,7 @@
 }
 
 .what {
+    margin-bottom: 5em;
 
     &__title {
         font-size: 2em;
@@ -211,14 +214,31 @@
         justify-content: space-evenly;
         height: 25vh;
         border-bottom: 1px solid lightgray;
-        margin: 0;
-        gap: 0;
+        margin-top: 0;
+
+        hr {
+            height: 50%;
+            width: 1px;
+        }
     }
 
     .info {
         height: 100%;
         width: 20em;
         padding: 0;
+
+        i {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+    
+        p {
+            font-size: 1.1em;
+        }
     }
 
     .reviews {
@@ -276,6 +296,7 @@
         justify-content: center;
         height: 40vh;
         gap: 3em;
+        margin-bottom: 10em;
 
         hr {
             height: 40%;
@@ -290,12 +311,10 @@
     
         i {
             font-size: 2.5em;
-            color: $primary-color;
         }
     
         h3 {
-            color: gray;
-            font-weight: normal;
+            font-size: 1.17em;
         }
     
         p {
@@ -304,7 +323,7 @@
     }
 
     .swiper-container {
-        margin-bottom: 8em;
+        margin-bottom: 10em;
     }
 
     .reviews {
@@ -329,8 +348,13 @@
         }
     }
 
+    .what {
+        margin-bottom: 10em;
+    }
+
     .whyus {
         flex-direction: row;
+        margin-bottom: 10em;
 
         &__call {
             width: 50%;
