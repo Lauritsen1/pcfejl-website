@@ -4,12 +4,25 @@
 // Mobile
 
 .booking-container {
+    margin-bottom: 5em;
+
     &__text {
         margin-bottom: 1em;
+
+        h2 {
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid $primary-color;
+            width: max-content;
+        }
 
         p {
             line-height: 1.5;
             font-size: 1.1em;
+            margin-bottom: 0.5em;
+        }
+
+        p:last-of-type {
+            margin: 0;
         }
     }
 }
