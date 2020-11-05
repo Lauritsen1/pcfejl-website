@@ -164,12 +164,16 @@
 
     &__rating {
         display: flex;
-        gap: 0.2em;
 
         img {
             height: 2em;
             width: 2em;
             margin-bottom: 2em;
+            margin-right: 0.2em;
+        }
+
+        img:last-of-type {
+            margin: 0;
         }
     }
 }
