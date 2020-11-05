@@ -53,6 +53,8 @@
     h2 {
         color: $dark-color;
         font-size: 2em;
+        border-bottom: 1px solid $primary-color;
+        width: max-content;
     }
 
     &__description {
@@ -120,10 +122,16 @@
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
 
+    &__heading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__heading {
         text-align: center;
-        color: gray;
-        margin-bottom: 1em;
+        border-bottom: 1px solid $primary-color;
+        width: max-content;
     }
 }
 
@@ -175,6 +183,8 @@
         margin-bottom: 0.5em;
         transition: all 1s;
         opacity: 1;
+        border-bottom: 1px solid $primary-color;
+        width: max-content;
     }
 
     &__text {
