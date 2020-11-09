@@ -1,0 +1,143 @@
+@import "style.scss";
+
+//==========
+// Mobile
+
+.backup-container {
+    margin-bottom: 10em;
+
+    &__title {
+        border-bottom: 1px solid $primary-color;
+        max-width: max-content;
+    }
+
+    &__logo {
+
+        img {
+            width: 25em;
+            object-fit: contain;
+        }
+    }
+
+    &__description {
+        margin: 2em 0;
+    }
+
+    &__list {
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 2em;
+
+            h3 {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.backup-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 5em;
+
+    &__title {
+        text-align: center;
+        color: $dark-color;
+        font-size: 1.2em;
+    }
+
+    &__price {
+        color: $primary-color;
+        font-size: 1.5em;
+    }
+
+    &__line {
+        width: 100%;
+        border: none;
+        background-color: $primary-color;
+        margin: 1em 0;
+    }
+
+    &__line--big {
+        height: 4px;
+    }
+
+    &__line--small {
+        height: 1px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        width: 8em;
+        height: 8em;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__info {
+        margin-bottom: 2em;
+
+        h3 {
+            color: $primary-color;
+            margin: 1em 0;
+        }
+
+        p {
+            height: 6em;
+        }
+    }
+
+    &__call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        height: 3em;
+        color: white;
+        width: 100%;
+    }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+
+    .backup-container-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin-bottom: 5em;
+    }
+
+    .backup-card {
+        margin: 0;
+    }
+}
+
+//==========
+// Desktop
+
+@media all and (min-width: 1100px) {
+
+    .backup-container-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
