@@ -219,12 +219,16 @@
 }
 
 .partners {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5em;
 
     h2 {
         font-size: 1.5em;
         margin-bottom: 1em;
+        border-bottom: 1px solid $primary-color;
+        width: max-content;
     }
 
     &__inner-container {
