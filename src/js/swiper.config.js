@@ -3,6 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     speed: 1500,
+    spaceBetween: 100,
     autoplay: {
         delay: 10000,
     },
@@ -16,11 +17,11 @@ var mySwiper = new Swiper('.swiper-container', {
         },
         // when window width is <= 499px
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         // when window width is <= 999px
         1100: {
-            slidesPerView: 3,
+            slidesPerView: 1,
         },
     },
 

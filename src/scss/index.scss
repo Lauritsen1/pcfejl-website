@@ -8,14 +8,6 @@
     flex-direction: column;
     align-items: center;
     margin: 3em 0;
-
-    hr {
-        background-color: $primary-color;
-        border: none;
-        height: 1px;
-        width: 50%;
-        margin: 3em 0;
-    }
 }
 
 .info {
@@ -24,6 +16,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 3em;
 
     i {
         font-size: 3em;
@@ -46,16 +39,25 @@
 }
 
 .what {
-    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2em 1em;
 
-    &__title {
-        font-size: 1.5em;
-        color: $dark-color;
-        margin-bottom: 0.5em;
-        transition: all 1s;
-        opacity: 1;
-        border-bottom: 1px solid $primary-color;
-        width: max-content;
+    &__heading {
+        margin-bottom: 1em;
+
+        h2 {
+            font-size: 2.5em;
+            color: $dark-color;
+            margin-bottom: 0.5em;
+        }
+
+        hr {
+            background-color: $primary-color;
+            border: none;
+            width: 8em;
+            height: 0.8em;
+        }
     }
 
     &__text {
@@ -85,12 +87,29 @@
     opacity: 0;
 }
 
+.review-container {
+    background-color: whitesmoke;
+    padding: 2em 1em;
+
+    &__heading {
+        margin-bottom: 3em;
+
+        h2 {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    hr {
+        background-color: $primary-color;
+        border: none;
+        width: 8em;
+        height: 0.8em;
+        margin-bottom: 1em;
+    }
+}
+
 .swiper-container {
     width: 100%;
-    height: 375px;
-    margin-bottom: 5em;
-    border-right: 1px solid lightgrey;
-    border-left: 1px solid lightgrey;
 
     &__heading-container {
         display: flex;
@@ -105,29 +124,21 @@
     }
 }
 
-.swiper-slide {
-    padding: 1.5em;
-}
-
 .review {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 
     &__title {
         font-size: 1.2em;
-        font-style: italic;
         margin-bottom: 0.5em;
     }
 
     &__text {
-        font-style: italic;
         margin-bottom: 0.5em;
     }
 
     &__name {
-        font-style: italic;
         border-bottom: 2px solid $primary-color;
         width: max-content;
     }
@@ -151,13 +162,19 @@
 .whyus {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5em;
+    padding: 2em 1em;
+
+    hr {
+        background-color: $primary-color;
+        border: none;
+        width: 8em;
+        height: 0.8em;
+        margin-top: 1em;
+    }
 
     h2 {
         color: $dark-color;
-        font-size: 2em;
-        border-bottom: 1px solid $primary-color;
-        width: max-content;
+        font-size: 2.5em;
     }
 
     &__description {
@@ -189,31 +206,22 @@
         }
     }
 
-    &__call {
+    &__phone {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-
-        img {
-            object-fit: contain;
-            width: 50%;
-        }
-    }
-
-    &__number {
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
 
-        span:first-of-type {
-            color: $dark-color;
-            font-size: 1.5em;
-        }
+        div {
+            text-align: center;
 
-        span:last-of-type {
-            color: $primary-color;
-            font-size: 2em;
+            p {
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: 2em;
+                color: $primary-color;
+            }
         }
     }
 }
@@ -222,13 +230,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5em;
+    justify-content: center;
+
+    hr {
+        background-color: $primary-color;
+        border: none;
+        width: 8em;
+        height: 0.8em;
+        margin: 1em 0 3em 0;
+    }
 
     h2 {
         font-size: 1.5em;
-        margin-bottom: 1em;
-        border-bottom: 1px solid $primary-color;
-        width: max-content;
     }
 
     &__inner-container {
@@ -253,7 +266,7 @@
         justify-content: space-evenly;
         height: 25vh;
         border-bottom: 1px solid lightgray;
-        margin-top: 0;
+        margin: 0;
 
         hr {
             height: 50%;
@@ -280,6 +293,33 @@
         }
     }
 
+    .what {
+        &__image {
+            display: none;
+        }
+
+        &__text {
+            padding: 2em;
+            max-width: 35.625em;
+        }
+    }
+
+    .review-container {
+        display: flex;
+        align-items: center;
+        height: 40vh;
+        padding: 2em;
+
+        &__heading {
+            margin: 0;
+        }
+
+        &__inner {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+
     .reviews {
         display: flex;
         flex-direction: row;
@@ -297,27 +337,11 @@
 
     .whyus {
         flex-direction: column;
-        gap: 5em;
-
-        &__call {
-            align-items: center;
-            justify-content: space-evenly;
-
-            img {
-                width: 40%;
-            }
-        }
-
-        &__number {
-            span:last-of-type {
-                color: $primary-color;
-                font-size: 2.5em;
-            }
-        }
     }
 
     .partners {
         text-align: center;
+        margin: 5em 0;
 
         h2 {
             font-size: 2em;
@@ -343,9 +367,8 @@
 @media all and (min-width: 1100px) {
     .info-container {
         justify-content: center;
-        height: 40vh;
+        height: 30vh;
         gap: 3em;
-        margin-bottom: 10em;
 
         hr {
             height: 40%;
@@ -357,6 +380,7 @@
         height: 20em;
         width: 20em;
         padding: 0;
+        margin: 0;
 
         i {
             font-size: 2.5em;
@@ -372,48 +396,72 @@
     }
 
     .swiper-container {
-        margin-bottom: 10em;
+        width: 60%;
     }
 
-    .reviews {
-        display: flex;
-        flex-direction: row;
-        background-color: whitesmoke;
-        padding: 2.5em;
-        min-width: 67.5em;
-        margin-bottom: 10em;
+    .review-container {
+        height: 40vh;
+        padding: 2em;
 
-        div:first-of-type {
-            img {
-                width: 50%;
+        &__heading {
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
             }
         }
 
-        div {
-            width: 50%;
+        &__inner {
+            justify-items: center;
+        }
+    }
+
+    .review {
+        &__title {
+            font-size: 2em;
+            margin-bottom: 0.5em;
         }
 
-        &__title {
-            font-size: 1.5em;
+        &__text {
+            font-size: 1.1em;
         }
     }
 
     .what {
-        margin-bottom: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+        }
+
+        &__image {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .whyus {
-        flex-direction: row;
-        margin-bottom: 10em;
-
-        &__call {
-            width: 50%;
-            align-items: center;
-            justify-content: space-evenly;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 60vh;
+        justify-items: center;
+        padding: 0;
 
         &__description {
-            margin-bottom: 3em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 35.625em;
+            margin: 0;
         }
     }
 }
