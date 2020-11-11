@@ -214,11 +214,11 @@
         div {
             text-align: center;
 
-            p {
+            p:first-of-type {
                 font-size: 1.1em;
             }
 
-            h2 {
+            p:last-of-type {
                 font-size: 2em;
                 color: $primary-color;
             }
@@ -240,8 +240,8 @@
         margin: 1em 0 3em 0;
     }
 
-    h2 {
-        font-size: 1.5em;
+    h3 {
+        font-size: 2em;
     }
 
     &__inner-container {
