@@ -246,6 +246,7 @@
 
     &__inner-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
@@ -254,6 +255,7 @@
     &__logo {
         width: 15em;
         object-fit: contain;
+        margin-bottom: 3em;
     }
 }
 
@@ -294,12 +296,15 @@
     }
 
     .what {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &__image {
             display: none;
         }
 
         &__text {
-            padding: 2em;
             max-width: 35.625em;
         }
     }
@@ -395,13 +400,9 @@
         }
     }
 
-    .swiper-container {
-        width: 60%;
-    }
-
     .review-container {
         height: 40vh;
-        padding: 2em;
+        padding: 0 15%;
 
         &__heading {
             h2 {
@@ -411,10 +412,6 @@
             p {
                 font-size: 1.1em;
             }
-        }
-
-        &__inner {
-            justify-items: center;
         }
     }
 
@@ -453,8 +450,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 60vh;
-        justify-items: center;
-        padding: 0;
+        padding: 0 15%;
 
         &__description {
             display: flex;
@@ -463,5 +459,18 @@
             max-width: 35.625em;
             margin: 0;
         }
+    }
+
+    .partners {
+
+        &__inner-container {
+            flex-direction: row;
+        }
+
+        &__logo {
+            margin: 0;
+            margin-right: 3em;
+        }
+    
     }
 }
