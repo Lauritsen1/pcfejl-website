@@ -4,9 +4,6 @@
 // Mobile
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 3em 0;
 }
 
@@ -40,7 +37,6 @@
 
 .what {
     display: flex;
-    flex-direction: column-reverse;
     padding: 2em 1em;
 
     &__heading {
@@ -264,8 +260,9 @@
 
 @media all and (min-width: 768px) {
     .info-container {
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
         height: 25vh;
         border-bottom: 1px solid lightgray;
         margin: 0;
@@ -278,8 +275,9 @@
 
     .info {
         height: 100%;
-        width: 20em;
+        width: max-content;
         padding: 0;
+        margin: 0;
 
         i {
             font-size: 2.5em;
@@ -371,9 +369,9 @@
 
 @media all and (min-width: 1100px) {
     .info-container {
-        justify-content: center;
         height: 30vh;
-        gap: 3em;
+        padding: 0 20%;
+        justify-content: center;
 
         hr {
             height: 40%;
@@ -381,8 +379,7 @@
     }
 
     .info {
-        width: 100%;
-        height: 20em;
+        height: 100%;
         width: 20em;
         padding: 0;
         margin: 0;
@@ -401,8 +398,7 @@
     }
 
     .review-container {
-        height: 40vh;
-        padding: 0 15%;
+        padding: 5em 15%;
 
         &__heading {
             h2 {
@@ -430,7 +426,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        padding: 5em 0;
 
         &__text {
             display: flex;
@@ -449,8 +445,7 @@
     .whyus {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 60vh;
-        padding: 0 15%;
+        padding: 5em 15%;
 
         &__description {
             display: flex;
